@@ -115,14 +115,5 @@ header {
     line-height: 1.6;
 }
 
-/* Responsive: side-by-side on larger screens */
-@media (min-width: 768px) {
-    .features-container {
-        flex-direction: row;
-        gap: 30px;
-    }
-    
-    .feature-item {
-        flex: 1;
-    }
+
 }
