@@ -1,10 +1,6 @@
+/* Global Styles */
 *{
     margin: 0;   
-}
-
-a{
-    text-decoration: none;
-    color: white;
 }
 
 html, body {
@@ -12,6 +8,11 @@ html, body {
   font-size: 16px;
   line-height: 1.5;
   color: #0a0a0a;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 p{
@@ -39,6 +40,11 @@ img{
     letter-spacing: 2px;
 }
 
+.price {
+    color: green;
+    font-weight: bold;
+}
+
 /*header*/
 header {
   background-image: url(./images/header.jpg);
@@ -60,19 +66,6 @@ header {
     justify-content: center;
 }
 
-.house-item-text{
-    padding:20px;
-    
-}   
-
-.house-item {
-    background-color: rgb(247, 243, 243);    
-}
-
-.houses-container {
-
-}
-
 /* More About Us Section */
 .about-us {
     padding: 40px 0;
@@ -85,7 +78,7 @@ header {
 
 .features-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: center;
     gap: 40px;
 }
 
@@ -100,8 +93,8 @@ header {
 }
 
 .feature-icon img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 .feature-item h3 {
@@ -115,5 +108,37 @@ header {
     line-height: 1.6;
 }
 
+/* Houses and Penthouses Section */
+.houses-container {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: center;
+    gap: 40px;
+}
 
+.house-item {
+    background-color: rgb(247, 243, 243);    
+}
+
+.house-item-text{
+    padding:20px;
+    
+    
+}   
+
+.icon-flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+    list-style: none;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.icon-flex li {
+  display: flex;
+  gap: 10px; 
+  align-items: space-between;
+  padding-bottom: 20px;
 }
